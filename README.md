@@ -1,7 +1,7 @@
-## 📘 README.md
+📘 README.md
 
 ```markdown
-# 🚗 Dynamic Pricing for Urban Parking Lots
+🚗 Dynamic Pricing for Urban Parking Lots
 
 This project simulates a real-time, intelligent pricing engine for urban parking spaces using historical and streaming data. It adjusts parking prices dynamically based on demand, traffic conditions, queue lengths, special events, and competition between nearby lots.
 
@@ -9,13 +9,13 @@ Developed as part of the **Summer Analytics 2025** capstone challenge hosted by 
 
 ---
 
-## 📊 Project Overview
+📊 Project Overview
 
 Urban parking spaces are limited and often mispriced due to static pricing models. This project introduces a **data-driven dynamic pricing system** that reacts to real-time features to improve utilization and efficiency.
 
 ---
 
-## 🔍 Features
+🔍 Features
 
 - ⏱️ Real-time simulation of 14 parking lots over 73 days
 - 📈 Three dynamic pricing models:
@@ -28,7 +28,7 @@ Urban parking spaces are limited and often mispriced due to static pricing model
 
 ---
 
-## 📁 Dataset
+📁 Dataset
 
 - **Records:** 18,000+ (sampled every 30 mins between 8:00 AM – 4:30 PM)
 - **Fields Include:**
@@ -38,9 +38,9 @@ Urban parking spaces are limited and often mispriced due to static pricing model
 
 ---
 
-## 🧠 Model Summary
+🧠 Model Summary
 
-### 1️⃣ Baseline Linear Model
+1️⃣ Baseline Linear Model
 Price increases linearly with occupancy:
 
 ```
@@ -51,7 +51,7 @@ Price\_t+1 = Price\_t + α \* (Occupancy / Capacity)
 
 ---
 
-### 2️⃣ Demand-Based Model
+2️⃣ Demand-Based Model
 Price adjusts based on calculated demand:
 
 ```
@@ -63,13 +63,13 @@ Price = BasePrice \* (1 + λ \* NormalizedDemand)
 
 ---
 
-### 3️⃣ Competitive Model (Optional)
+3️⃣ Competitive Model (Optional)
 - Uses geospatial proximity to simulate nearby lot competition
 - Price decreases or reroutes vehicles if nearby lots are cheaper
 
 ---
 
-## ⚙️ Tech Stack
+⚙️ Tech Stack
 
 | Component         | Technology           |
 |------------------|----------------------|
@@ -81,7 +81,7 @@ Price = BasePrice \* (1 + λ \* NormalizedDemand)
 
 ---
 
-## 📦 Installation
+📦 Installation
 
 ```bash
 pip install pandas numpy pathway bokeh plotly geopy
@@ -89,7 +89,7 @@ pip install pandas numpy pathway bokeh plotly geopy
 
 ---
 
-## ▶️ How to Run
+▶️ How to Run
 
 1. Open the notebook in **Google Colab** or **VS Code Jupyter**.
 2. Run all cells from top to bottom.
@@ -100,7 +100,7 @@ pip install pandas numpy pathway bokeh plotly geopy
 
 ---
 
-## 📊 Visualization
+📊 Visualization
 
 * 📍 Real-time pricing line plots per parking lot
 * 📊 Comparison of price trends over time
@@ -108,7 +108,7 @@ pip install pandas numpy pathway bokeh plotly geopy
 
 ---
 
-## 📝 Assumptions
+📝 Assumptions
 
 * Base price is fixed at **\$10**
 * Demand normalization ensures price stays between **0.5x and 2x** base
